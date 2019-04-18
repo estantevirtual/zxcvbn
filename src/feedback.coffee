@@ -2,34 +2,34 @@ scoring = require('./scoring')
 
 feedback =
   messages:
-    use_a_few_words: 'Use a few words, avoid common phrases'
-    no_need_for_mixed_chars: 'No need for symbols, digits, or uppercase letters'
-    uncommon_words_are_better: 'Add another word or two. Uncommon words are better.'
-    straight_rows_of_keys_are_easy: 'Straight rows of keys are easy to guess'
-    short_keyboard_patterns_are_easy: 'Short keyboard patterns are easy to guess'
-    use_longer_keyboard_patterns: 'Use a longer keyboard pattern with more turns'
-    repeated_chars_are_easy: 'Repeats like "aaa" are easy to guess'
-    repeated_patterns_are_easy: 'Repeats like "abcabcabc" are only slightly harder to guess than "abc"'
-    avoid_repeated_chars: 'Avoid repeated words and characters'
-    sequences_are_easy: 'Sequences like abc or 6543 are easy to guess'
-    avoid_sequences: 'Avoid sequences'
-    recent_years_are_easy: 'Recent years are easy to guess'
-    avoid_recent_years: 'Avoid recent years'
-    avoid_associated_years: 'Avoid years that are associated with you'
-    dates_are_easy: 'Dates are often easy to guess'
-    avoid_associated_dates_and_years: 'Avoid dates and years that are associated with you'
-    top10_common_password: 'This is a top-10 common password'
-    top100_common_password: 'This is a top-100 common password'
-    very_common_password: 'This is a very common password'
-    similar_to_common_password: 'This is similar to a commonly used password'
-    a_word_is_easy: 'A word by itself is easy to guess'
-    names_are_easy: 'Names and surnames by themselves are easy to guess'
-    common_names_are_easy: 'Common names and surnames are easy to guess'
-    capitalization_doesnt_help: 'Capitalization doesn\'t help very much'
-    all_uppercase_doesnt_help: 'All-uppercase is almost as easy to guess as all-lowercase'
-    reverse_doesnt_help: 'Reversed words aren\'t much harder to guess'
-    substitution_doesnt_help: 'Predictable substitutions like \'@\' instead of \'a\' don\'t help very much'
-    user_dictionary: 'This password is on the blacklist'
+    use_a_few_words: "Escolha boas palavras, mas evite frases comuns."
+    no_need_for_mixed_chars: "Essa ficou bem complexa, nem precisava ter tantos símbolos, dígitos ou letras em caixa alta."
+    uncommon_words_are_better: "Uma dica é escrever as palavras de um jeito incomum."
+    straight_rows_of_keys_are_easy: "Letras e números em sequência são bem fáceis de adivinhar."
+    short_keyboard_patterns_are_easy: "Ops, melhor evitar padrões do teclado."
+    use_longer_keyboard_patterns: "Se for utilizar o layout do teclado como referência, use sequências maiores."
+    repeated_chars_are_easy: 'Repetições como "aaa" são bem fáceis de serem descobertas.'
+    repeated_patterns_are_easy: 'Repetições como "abcabcabc" são apenas um pouco mais difíceis de adivinhar que "abc".'
+    avoid_repeated_chars: "Evite palavras e caracteres repetidos."
+    sequences_are_easy: "Sequências como abc ou 6543 são bem fáceis de serem adivinhadas."
+    avoid_sequences: "Opa, é melhor evitar o uso de sequências."
+    recent_years_are_easy: "Utilizar datas recentes não é muito seguro."
+    avoid_recent_years: "Evite utilizar anos recentes."
+    avoid_associated_years: "Evite utilizar datas pessoais e de fácil identificação."
+    dates_are_easy: "Datas são bem fáceis de serem adivinhadas."
+    avoid_associated_dates_and_years: "Evite utilizar datas pessoais e de fácil identificação."
+    top10_common_password: "Essa é uma senha muito comum, melhor tentar outra."
+    top100_common_password: "Essa é uma senha muito comum, melhor tentar outra."
+    very_common_password: "Essa é uma senha muito comum, melhor tentar outra."
+    similar_to_common_password: "Essa é uma senha muito comum, melhor tentar outra."
+    a_word_is_easy: "Uma palavra por si só é bem fácil de ser adivinhada."
+    names_are_easy: "Colocar seu nome ou sobrenome não é muito seguro"
+    common_names_are_easy: "Nomes e sobrenomes comuns são fáceis de adivinhar."
+    capitalization_doesnt_help: "Utilizar letras maiúsculas não é muito útil!"
+    all_uppercase_doesnt_help: "Utilizar todas as letras maiúsculas têm o mesmo nível de dificuldade de utilizar todas minúsculas."
+    reverse_doesnt_help: "Palavras invertidas não são mais difíceis de descobrir.",
+    substitution_doesnt_help: "Substituições previsíveis como '@' em vez de 'a' não ajudam muito."
+    user_dictionary: "Ops, essa senha é muito fácil de ser descoberta. Escolha uma nova!"
 
   get_feedback: (score, sequence, custom_messages) ->
     @custom_messages = custom_messages
