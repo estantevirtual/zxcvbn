@@ -1,11 +1,11 @@
 {
-  "name": "@contentpass/zxcvbn",
+  "name": "@estantevirtual/zxcvbn",
   "version": "4.4.3",
-  "description": "realistic password strength estimation",
+  "description": "realistic password strength estimation - translated to pt-br",
   "author": "Dan Wheeler",
   "license": "MIT",
   "main": "lib/main.js",
-  "repository": "contentpass/zxcvbn",
+  "repository": "estantevirtual/zxcvbn",
   "scripts": {
     "test": "coffeetape test/*.coffee | faucet",
     "test-saucelabs": "zuul -- test/*.coffee",
